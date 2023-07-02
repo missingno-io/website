@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body, #__nuxt{
-    @apply bg-gradient-to-b from-gray-900 via-purple-950 to-purple-800 h-screen w-full text-gray-300 font-body;
+    @apply bg-purple-800 bg-gradient-to-b from-gray-900 via-purple-950 to-purple-800 h-screen w-full text-gray-300 font-body bg-no-repeat;
 }
 a.router-link-active{
     @apply underline;
