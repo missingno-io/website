@@ -19,14 +19,15 @@
                         <span aria-hidden="true" class="ml-2 text-lime">✔</span>
                         <span aria-hidden="true" class="ml-2 text-yellow">Running...</span>
                     </div>
-                    <div class="md:ml-4 text-gray-200">
-                        ~/
+                    <div class="md:ml-4 text-gray-200 bg-pink-950">
+                        ~{{$route.path === '/' ? $route.path+'>' : $route.path+'/>' }}
                     </div>
                 </div>
                 <div class="border-y-2 border-lime-800 md:border-0 mb-6 md:mb-0 px-5 py-4 mt-6 md:mt-0 ml-auto">
                     <ul>
                         <li class="flex space-x-4">
                             <nuxtLink to="/" class="hover:text-gray-50">Home</nuxtlink>
+                            <nuxtLink to="/about" class="hover:text-gray-50">About</nuxtlink>
                         </li>
                     </ul>
                 </div>
